@@ -11,6 +11,11 @@ class TestBrowserClient(unittest.TestCase):
         self.browser_client.initialised = True
         self.assertTrue(self.browser_client.wait_for_initialised())
 
+    def test_wait_for_initialised_error(self):
+        self.browser_client.initialised_error = Exception("Initialization failed")
+        with self.assertRaises(Exception):
+            self.browser_client.wait_for_initialised()
+
     def test_subscribe_to_initialised_changed(self):
         callback = MagicMock()
         unsubscribe = self.browser_client.subscribe_to_initialised_changed(callback)
@@ -26,13 +31,28 @@ class TestBrowserClient(unittest.TestCase):
         self.assertTrue(self.browser_client.initialised)
         self.client.update_audiences.assert_called_with(['audience1'])
 
+    def test_update_audiences_error(self):
+        self.client.update_audiences.side_effect = Exception("Update failed")
+        with self.assertRaises(Exception):
+            self.browser_client.update_audiences(['audience1'])
+
     def test_update_features(self):
         self.browser_client.update_features()
         self.client.update_features.assert_called_once()
 
+    def test_update_features_error(self):
+        self.client.update_features.side_effect = Exception("Update failed")
+        with self.assertRaises(Exception):
+            self.browser_client.update_features()
+
     def test_close(self):
         self.browser_client.close()
         self.client.close.assert_called_once()
+
+    def test_close_error(self):
+        self.client.close.side_effect = Exception("Close failed")
+        with self.assertRaises(Exception):
+            self.browser_client.close()
 
 if __name__ == '__main__':
     unittest.main()

@@ -3,6 +3,12 @@ from features_client import FeatureBoardClient
 from log import debugLog
 
 def create_client_internal(state_store: EffectiveFeatureStateStore) -> FeatureBoardClient:
+    """
+    Create a FeatureBoard client for internal SDK use.
+
+    :param state_store: The state store instance.
+    :return: A FeatureBoardClient instance.
+    """
     return FeatureBoardClient(
         get_effective_values=lambda: {
             'audiences': state_store.audiences,

@@ -10,7 +10,19 @@ from update_strategies.update_strategies import UpdateStrategies
 from utils.compare_arrays import compareArrays
 from utils.retry import retry
 
-def create_browser_client(update_strategy=None, environment_api_key=None, api=None, audiences=None, initial_values=None):
+def create_browser_client(update_strategy: UpdateStrategies = None, environment_api_key: str = None, api: FeatureBoardApiConfig = None, audiences: list = None, initial_values: list = None) -> BrowserClient:
+    """
+    Create a FeatureBoard client for use in the browser.
+
+    This client will automatically connect to the FeatureBoard service and update the feature state.
+
+    :param update_strategy: The method your feature state is updated.
+    :param environment_api_key: The environment API key.
+    :param api: Connect to a self-hosted instance of FeatureBoard.
+    :param audiences: The list of audiences.
+    :param initial_values: The initial values for the feature state.
+    :return: A BrowserClient instance.
+    """
     initial_promise = PromiseCompletionSource()
     initialised_state = {
         'initialised_callbacks': [],
@@ -39,7 +51,12 @@ def create_browser_client(update_strategy=None, environment_api_key=None, api=No
         initialised_state['initialised_promise'].resolve(True)
     ] if not initialised_state['initialised_promise'].completed else None)
 
-    def is_initialised():
+    def is_initialised() -> bool:
+        """
+        Check if the client is initialised.
+
+        :return: True if initialised, False otherwise.
+        """
         return initialised_state['initialised_promise'].completed
 
     return BrowserClient(
