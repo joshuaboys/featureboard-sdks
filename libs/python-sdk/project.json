@@ -1,0 +1,36 @@
+{
+    "name": "python-sdk",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/python-sdk/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": [
+                    "libs/python-sdk/src/**/*.py",
+                    "libs/python-sdk/package.json"
+                ]
+            }
+        },
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": ["python setup.py build"],
+                "cwd": "libs/python-sdk",
+                "parallel": false
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "outputs": ["{options.reportsDirectory}"],
+            "options": {
+                "command": "pytest",
+                "cwd": "libs/python-sdk",
+                "reportsDirectory": "../../coverage/libs/python-sdk"
+            }
+        }
+    },
+    "tags": []
+}

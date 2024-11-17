@@ -1,0 +1,22 @@
+{
+    "name": "@featureboard/python-sdk",
+    "version": "0.1.0",
+    "license": "MIT",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arkahna/featureboard-sdks.git"
+    },
+    "keywords": [
+        "Feature management",
+        "Feature toggles",
+        "Feature flags"
+    ],
+    "bugs": {
+        "url": "https://github.com/arkahna/featureboard-sdks/issues"
+    },
+    "homepage": "https://github.com/arkahna/featureboard-sdks/tree/master/libs/python-sdk#readme",
+    "dependencies": {
+        "requests": "^2.25.1"
+    }
+}
