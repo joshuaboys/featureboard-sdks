@@ -39,3 +39,9 @@ jobs:
           coverage run -m pytest libs/python-sdk/tests
           coverage report
           coverage html -d coverage_report
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage_report
