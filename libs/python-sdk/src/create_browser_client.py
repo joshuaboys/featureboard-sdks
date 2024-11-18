@@ -1,4 +1,4 @@
-from promise_completion_source import PromiseCompletionSource
+from utils.promise_completion_source import PromiseCompletionSource
 from client_connection import BrowserClient
 from create_client import create_client_internal
 from effective_feature_state_store import EffectiveFeatureStateStore
