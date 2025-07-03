@@ -1,0 +1,1784 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.2.2",
+  "pathMappings": {
+    "@featureboard/api-authentication": [
+      "libs/api-authentication/src/index.ts"
+    ],
+    "@featureboard/cli": [
+      "apps/cli/src/index.ts"
+    ],
+    "@featureboard/code-generator": [
+      "libs/code-generator/src/index.ts"
+    ],
+    "@featureboard/contracts": [
+      "libs/contracts/src/index.ts"
+    ],
+    "@featureboard/js-sdk": [
+      "libs/js-sdk/src/index.ts"
+    ],
+    "@featureboard/live-connection": [
+      "libs/live-connection/src/server.ts"
+    ],
+    "@featureboard/node-sdk": [
+      "libs/node-sdk/src/index.ts"
+    ],
+    "@featureboard/nx-plugin": [
+      "libs/nx-plugin/src/index.ts"
+    ],
+    "@featureboard/react-sdk": [
+      "libs/react-sdk/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx-dotnet/core",
+      "version": "3.0.0",
+      "options": {
+        "nugetPackages": {}
+      }
+    }
+  ],
+  "fileMap": {
+    "projectFileMap": {
+      "examples-dotnet-api": [
+        {
+          "file": "apps/examples/dotnet-api/.gitignore",
+          "hash": "12821096717990657955"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Controllers/WeatherForecastController.cs",
+          "hash": "14781660302472111831"
+        },
+        {
+          "file": "apps/examples/dotnet-api/FeatureBoardSdk.Examples.DotnetApi.csproj",
+          "hash": "8251074347077302589",
+          "deps": [
+            "dotnet-sdk"
+          ]
+        },
+        {
+          "file": "apps/examples/dotnet-api/FeatureBoardSdk.Examples.DotnetApi.csproj.user",
+          "hash": "12080875683932226469"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Features.cs",
+          "hash": "3636228688668237919"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Models/TemperatureScale.cs",
+          "hash": "5773357477713761276"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Models/WeatherFeatures.cs",
+          "hash": "5932882997530096294"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Models/WeatherForecast.cs",
+          "hash": "309645771152373713"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Program.cs",
+          "hash": "15097279719345646767"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Properties/launchSettings.json",
+          "hash": "7562020519316731042"
+        },
+        {
+          "file": "apps/examples/dotnet-api/Services/QueryStringAudienceProvider.cs",
+          "hash": "3906668904603641744"
+        },
+        {
+          "file": "apps/examples/dotnet-api/appsettings.Development.json",
+          "hash": "7886013864804760141"
+        },
+        {
+          "file": "apps/examples/dotnet-api/appsettings.json",
+          "hash": "5674245820359545747"
+        },
+        {
+          "file": "apps/examples/dotnet-api/package.json",
+          "hash": "344521169309320766"
+        },
+        {
+          "file": "apps/examples/dotnet-api/project.json",
+          "hash": "9397416300290675962"
+        }
+      ],
+      "api-authentication": [
+        {
+          "file": "libs/api-authentication/.eslintrc.cjs",
+          "hash": "17934149059817408221"
+        },
+        {
+          "file": "libs/api-authentication/.eslintrc.json",
+          "hash": "2466561453938414378"
+        },
+        {
+          "file": "libs/api-authentication/CHANGELOG.md",
+          "hash": "17962820810648444045"
+        },
+        {
+          "file": "libs/api-authentication/README.md",
+          "hash": "7331854851358922977"
+        },
+        {
+          "file": "libs/api-authentication/package.json",
+          "hash": "12328168521985618822"
+        },
+        {
+          "file": "libs/api-authentication/project.json",
+          "hash": "11143696174897491305"
+        },
+        {
+          "file": "libs/api-authentication/src/index.ts",
+          "hash": "6655227546323145716"
+        },
+        {
+          "file": "libs/api-authentication/src/lib/config.ts",
+          "hash": "14615772664514252361"
+        },
+        {
+          "file": "libs/api-authentication/src/lib/current-organization.ts",
+          "hash": "1268233774249917366"
+        },
+        {
+          "file": "libs/api-authentication/src/lib/get-valid-token.ts",
+          "hash": "9224081092541970241"
+        },
+        {
+          "file": "libs/api-authentication/src/lib/token.ts",
+          "hash": "14449342229604641166"
+        },
+        {
+          "file": "libs/api-authentication/tsconfig.build.json",
+          "hash": "6301529111928286247"
+        },
+        {
+          "file": "libs/api-authentication/tsconfig.json",
+          "hash": "13102079942051040185"
+        },
+        {
+          "file": "libs/api-authentication/vite.config.ts",
+          "hash": "4920194303082312708",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "featureboard-sdks": [
+        {
+          "file": ".changeset/README.md",
+          "hash": "4888845876018830777"
+        },
+        {
+          "file": ".changeset/config.json",
+          "hash": "17246726044098273924"
+        },
+        {
+          "file": ".changeset/hungry-hotels-repeat.md",
+          "hash": "3707367568572450366"
+        },
+        {
+          "file": ".changeset/slimy-cats-wait.md",
+          "hash": "6327622437043567840"
+        },
+        {
+          "file": ".config/dotnet-tools.json",
+          "hash": "1016851952971145824"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "14269952377329104138"
+        },
+        {
+          "file": ".eslintignore",
+          "hash": "3646440848531055503"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "7166927661795892848"
+        },
+        {
+          "file": ".github/workflows/codeql-analysis.yml",
+          "hash": "6779100115700406604"
+        },
+        {
+          "file": ".github/workflows/main.yml",
+          "hash": "11791375012732237404"
+        },
+        {
+          "file": ".github/workflows/pr.yml",
+          "hash": "10722308579224882399"
+        },
+        {
+          "file": ".github/workflows/python-sdk-ci.yml",
+          "hash": "18099728442575956931"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "15407222468798152956"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "9175937087874081623"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "14933958431919336064"
+        },
+        {
+          "file": ".verdaccio/config.yml",
+          "hash": "300035921567345902"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "2419985982782664113"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17391104984497679580"
+        },
+        {
+          "file": ".vscode/settings.json",
+          "hash": "4888362556321474634"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "3468875386168814039"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "2370723894999957533"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "7266521292558285207"
+        },
+        {
+          "file": "DEPENDENCY_UPDATE_SUMMARY.md",
+          "hash": "8518515001561519322"
+        },
+        {
+          "file": "Directory.Build.props",
+          "hash": "11106101967569859271"
+        },
+        {
+          "file": "Directory.Build.targets",
+          "hash": "11998991759290847721"
+        },
+        {
+          "file": "FeatureBoard.sln",
+          "hash": "13559658166445267352"
+        },
+        {
+          "file": "FeatureBoard.sln.DotSettings",
+          "hash": "6453963405155667691"
+        },
+        {
+          "file": "FeatureBoardSdks.sln.DotSettings",
+          "hash": "15535432131190186628"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "2188847138110512546"
+        },
+        {
+          "file": "README.md",
+          "hash": "17050688571016262374"
+        },
+        {
+          "file": "SECURITY.md",
+          "hash": "15913819131748087949"
+        },
+        {
+          "file": "apps/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/Python-sdk/Readme",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "docs/architecture.drawio",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/python-sdk/examples.md",
+          "hash": "9716157567679170568"
+        },
+        {
+          "file": "docs/python-sdk/usage.md",
+          "hash": "9217855265210656011"
+        },
+        {
+          "file": "libs/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "nx.json",
+          "hash": "4065405365952380672"
+        },
+        {
+          "file": "package.json",
+          "hash": "12260349197705913088",
+          "deps": [
+            "npm:@changesets/changelog-github",
+            "npm:@changesets/cli",
+            "npm:@commander-js/extra-typings",
+            "npm:@nx-dotnet/core",
+            "npm:@nx/devkit",
+            "npm:@nx/esbuild",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/js",
+            "npm:@nx/node",
+            "npm:@nx/plugin",
+            "npm:@nx/vite",
+            "npm:@nx/workspace",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@testing-library/dom",
+            "npm:@testing-library/react",
+            "npm:@types/debug",
+            "npm:@types/ejs",
+            "npm:@types/node",
+            "npm:@types/prompts",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@types/ws",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:commander",
+            "npm:copyfiles",
+            "npm:dotenv",
+            "npm:ejs",
+            "npm:esbuild",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-prettier",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:happy-dom",
+            "npm:jsonc-eslint-parser",
+            "npm:msw",
+            "npm:nx",
+            "npm:prettier",
+            "npm:prompts",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-test-renderer",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:tslib",
+            "npm:tsup",
+            "npm:typescript",
+            "npm:verdaccio",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "16577755671406265403"
+        },
+        {
+          "file": "pnpm-workspace.yaml",
+          "hash": "14945445021511014540"
+        },
+        {
+          "file": "project.json",
+          "hash": "17648441135424490317"
+        },
+        {
+          "file": "tools/tsconfig.tools.json",
+          "hash": "9677572419765487182"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "3581877882007358692"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "13435805083006857405"
+        },
+        {
+          "file": "tsconfig.settings.json",
+          "hash": "4260094779194944094"
+        },
+        {
+          "file": "vitest.config.ts",
+          "hash": "14633884632236556959",
+          "deps": [
+            "npm:@vitejs/plugin-react",
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ],
+      "js-sdk": [
+        {
+          "file": "libs/js-sdk/.eslintrc.cjs",
+          "hash": "11507973869147705830"
+        },
+        {
+          "file": "libs/js-sdk/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/js-sdk/CHANGELOG.md",
+          "hash": "14395110866194800850"
+        },
+        {
+          "file": "libs/js-sdk/README.md",
+          "hash": "10004326154913545053"
+        },
+        {
+          "file": "libs/js-sdk/package.json",
+          "hash": "1900403801327309764",
+          "deps": [
+            "contracts",
+            "npm:debug@4.4.1",
+            "npm:promise-completion-source"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/project.json",
+          "hash": "10622124705404769446"
+        },
+        {
+          "file": "libs/js-sdk/src/client-connection.ts",
+          "hash": "16973206367906716129"
+        },
+        {
+          "file": "libs/js-sdk/src/create-browser-client.ts",
+          "hash": "6735387211940275023",
+          "deps": [
+            "contracts",
+            "npm:promise-completion-source"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/create-client.ts",
+          "hash": "11944204317401573904",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/create-manual-client.ts",
+          "hash": "4076054840278846482",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/effective-feature-state-store.ts",
+          "hash": "9633000033101324055",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/ensure-single.ts",
+          "hash": "13236079809642776366",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/featureboard-api-config.ts",
+          "hash": "13584047126809460467"
+        },
+        {
+          "file": "libs/js-sdk/src/featureboard-service-urls.ts",
+          "hash": "14890254508135986742"
+        },
+        {
+          "file": "libs/js-sdk/src/features-client.ts",
+          "hash": "1555579817829808424"
+        },
+        {
+          "file": "libs/js-sdk/src/index.ts",
+          "hash": "4157088929668346481"
+        },
+        {
+          "file": "libs/js-sdk/src/interval.ts",
+          "hash": "13322875163344982776"
+        },
+        {
+          "file": "libs/js-sdk/src/js-state.ts",
+          "hash": "2953617595279972187",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/log.ts",
+          "hash": "3704306414409479239",
+          "deps": [
+            "npm:debug@4.4.1"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/http-client.spec.ts",
+          "hash": "3527990012291977035",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/live-client.spec.ts",
+          "hash": "14540461271790221051",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/manual-client.spec.ts",
+          "hash": "1557667603112551021",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/mode-manual.spec.ts",
+          "hash": "5880425104635804185",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/mode-polling.spec.ts",
+          "hash": "11758924797211857379",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/tests/ws-helper.ts",
+          "hash": "2602488336991843022",
+          "deps": [
+            "contracts",
+            "live-connection"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/timeout.ts",
+          "hash": "14004775417629330387"
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/createLiveUpdateStrategy.ts",
+          "hash": "17553551425048628798",
+          "deps": [
+            "contracts",
+            "live-connection",
+            [
+              "live-connection",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/createManualUpdateStrategy.ts",
+          "hash": "9518125661841503787"
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/createPollingUpdateStrategy.ts",
+          "hash": "8300425047544318623"
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/getEffectiveEndpoint.ts",
+          "hash": "8097718150714828801"
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/resolveUpdateStrategy.ts",
+          "hash": "3485996820810943986"
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/update-strategies.ts",
+          "hash": "1845195559081008210",
+          "deps": [
+            "live-connection"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/update-strategies/updates-log.ts",
+          "hash": "13280287788015023320"
+        },
+        {
+          "file": "libs/js-sdk/src/utils/compare-arrays.ts",
+          "hash": "169911087842381089"
+        },
+        {
+          "file": "libs/js-sdk/src/utils/fetchFeaturesConfiguration.ts",
+          "hash": "12950810789473387304",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/src/utils/http-log.ts",
+          "hash": "8211374449129940634"
+        },
+        {
+          "file": "libs/js-sdk/src/utils/pollingUpdates.ts",
+          "hash": "8452716149608766045"
+        },
+        {
+          "file": "libs/js-sdk/src/utils/retry.ts",
+          "hash": "4086293290236732030",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/js-sdk/tsconfig.json",
+          "hash": "12784099750605363916"
+        },
+        {
+          "file": "libs/js-sdk/vitest.config.ts",
+          "hash": "6738961965953414096",
+          "deps": [
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ],
+      "live-connection": [
+        {
+          "file": "libs/live-connection/.eslintrc.cjs",
+          "hash": "3761062236305687867"
+        },
+        {
+          "file": "libs/live-connection/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/live-connection/CHANGELOG.md",
+          "hash": "9094014642585114989"
+        },
+        {
+          "file": "libs/live-connection/README.md",
+          "hash": "11286122401115328587"
+        },
+        {
+          "file": "libs/live-connection/package.json",
+          "hash": "13358873230018738731",
+          "deps": [
+            "contracts",
+            "npm:debug@4.4.1",
+            "npm:promise-completion-source",
+            "npm:ws"
+          ]
+        },
+        {
+          "file": "libs/live-connection/project.json",
+          "hash": "10443356627410974931"
+        },
+        {
+          "file": "libs/live-connection/src/browser.ts",
+          "hash": "14687819001214229140",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/live-connection/src/live-connection.ts",
+          "hash": "16562088181203367900",
+          "deps": [
+            "contracts",
+            "npm:promise-completion-source"
+          ]
+        },
+        {
+          "file": "libs/live-connection/src/log.ts",
+          "hash": "1508601037135554820",
+          "deps": [
+            "npm:debug@4.4.1"
+          ]
+        },
+        {
+          "file": "libs/live-connection/src/server.ts",
+          "hash": "10490418239428821379",
+          "deps": [
+            "contracts",
+            [
+              "npm:ws",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/live-connection/src/timeout.ts",
+          "hash": "14004775417629330387"
+        },
+        {
+          "file": "libs/live-connection/tsconfig.json",
+          "hash": "6443620481557445590"
+        },
+        {
+          "file": "libs/live-connection/vitest.config.ts",
+          "hash": "6738961965953414096",
+          "deps": [
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ],
+      "dotnet-sdk": [
+        {
+          "file": "libs/dotnet-sdk/.gitignore",
+          "hash": "12821096717990657955"
+        },
+        {
+          "file": "libs/dotnet-sdk/AssemblyInfo.cs",
+          "hash": "2492774141667094031"
+        },
+        {
+          "file": "libs/dotnet-sdk/Attributes/FeatureFilterAttributeBase.cs",
+          "hash": "14553411553319196928"
+        },
+        {
+          "file": "libs/dotnet-sdk/Attributes/FeatureKeyNameAttribute.cs",
+          "hash": "15970624344135601735"
+        },
+        {
+          "file": "libs/dotnet-sdk/CHANGELOG.md",
+          "hash": "17451651415758468785"
+        },
+        {
+          "file": "libs/dotnet-sdk/Extensions/MathExtensions.cs",
+          "hash": "4624611806930874641"
+        },
+        {
+          "file": "libs/dotnet-sdk/FeatureBoard.DotnetSdk.csproj",
+          "hash": "11680035661111414980"
+        },
+        {
+          "file": "libs/dotnet-sdk/FeatureBoardClient.cs",
+          "hash": "13989813084213292872"
+        },
+        {
+          "file": "libs/dotnet-sdk/FeatureBoardHttpClient.cs",
+          "hash": "10674969606901601944"
+        },
+        {
+          "file": "libs/dotnet-sdk/FeatureBoardLastCheckedService.cs",
+          "hash": "15434264709350354182"
+        },
+        {
+          "file": "libs/dotnet-sdk/FeatureBoardService.cs",
+          "hash": "15925841149574477215"
+        },
+        {
+          "file": "libs/dotnet-sdk/Helpers/FeatureBoardHelpers.cs",
+          "hash": "9675303225111278087"
+        },
+        {
+          "file": "libs/dotnet-sdk/IAudienceProvider.cs",
+          "hash": "8226938309476931916"
+        },
+        {
+          "file": "libs/dotnet-sdk/IFeatureBoardClient.cs",
+          "hash": "7802913070269416561"
+        },
+        {
+          "file": "libs/dotnet-sdk/IFeatureBoardHttpClient.cs",
+          "hash": "17972197515390024227"
+        },
+        {
+          "file": "libs/dotnet-sdk/IFeatureBoardService.cs",
+          "hash": "10792420210113638503"
+        },
+        {
+          "file": "libs/dotnet-sdk/IsExternalInit.cs",
+          "hash": "3959653378365520045"
+        },
+        {
+          "file": "libs/dotnet-sdk/Models/AudienceExceptionValue.cs",
+          "hash": "18231772099709006322"
+        },
+        {
+          "file": "libs/dotnet-sdk/Models/FeatureBoardOptions.cs",
+          "hash": "11414391620647070661"
+        },
+        {
+          "file": "libs/dotnet-sdk/Models/FeatureConfiguration.cs",
+          "hash": "7294206246591562777"
+        },
+        {
+          "file": "libs/dotnet-sdk/Models/IFeatures.cs",
+          "hash": "16224752864504824966"
+        },
+        {
+          "file": "libs/dotnet-sdk/README.md",
+          "hash": "10483412114539962925"
+        },
+        {
+          "file": "libs/dotnet-sdk/Registration/FeatureBoardBuilder.cs",
+          "hash": "8971877023579219782"
+        },
+        {
+          "file": "libs/dotnet-sdk/Registration/RegisterFeatureBoard.cs",
+          "hash": "3717204537303498972"
+        },
+        {
+          "file": "libs/dotnet-sdk/State/FeatureBoardState.cs",
+          "hash": "5507775057648005058"
+        },
+        {
+          "file": "libs/dotnet-sdk/State/FeatureBoardStateSnapshot.cs",
+          "hash": "17313624635674139539"
+        },
+        {
+          "file": "libs/dotnet-sdk/State/IFeatureBoardExternalState.cs",
+          "hash": "8508565659497339914"
+        },
+        {
+          "file": "libs/dotnet-sdk/State/IFeatureBoardState.cs",
+          "hash": "7766319914037851319"
+        },
+        {
+          "file": "libs/dotnet-sdk/UpdateStrategies/OnRequestUpdateStrategyMiddleware.cs",
+          "hash": "4495503290907420511"
+        },
+        {
+          "file": "libs/dotnet-sdk/UpdateStrategies/PollingUpdateStrategyBackgroundService.cs",
+          "hash": "12381306359115861942"
+        },
+        {
+          "file": "libs/dotnet-sdk/assets/featureboard-logo.png",
+          "hash": "14634705283403906232"
+        },
+        {
+          "file": "libs/dotnet-sdk/package.json",
+          "hash": "1800910917473736059"
+        },
+        {
+          "file": "libs/dotnet-sdk/project.json",
+          "hash": "1982347554375774517"
+        }
+      ],
+      "nx-plugin": [
+        {
+          "file": "libs/nx-plugin/.eslintignore",
+          "hash": "18351264797180743000"
+        },
+        {
+          "file": "libs/nx-plugin/.eslintrc.cjs",
+          "hash": "16198119454512648336"
+        },
+        {
+          "file": "libs/nx-plugin/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/nx-plugin/CHANGELOG.md",
+          "hash": "6347156608841908314"
+        },
+        {
+          "file": "libs/nx-plugin/README.md",
+          "hash": "6650480494120036550"
+        },
+        {
+          "file": "libs/nx-plugin/executors.json",
+          "hash": "7218813780045050632"
+        },
+        {
+          "file": "libs/nx-plugin/generators.json",
+          "hash": "1079193233188882322"
+        },
+        {
+          "file": "libs/nx-plugin/package.json",
+          "hash": "1944008166166124083",
+          "deps": [
+            "npm:@nx/devkit@17.0.2",
+            "npm:zod",
+            "api-authentication",
+            "code-generator",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/project.json",
+          "hash": "8390024567114385099"
+        },
+        {
+          "file": "libs/nx-plugin/src/executors/code-gen/__snapshots__/executor.spec.ts.snap",
+          "hash": "16191731512340103234"
+        },
+        {
+          "file": "libs/nx-plugin/src/executors/code-gen/executor.spec.ts",
+          "hash": "9415568048749550350",
+          "deps": [
+            "npm:@nx/devkit@17.0.2",
+            "npm:msw",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/executors/code-gen/executor.ts",
+          "hash": "9169958923010005011",
+          "deps": [
+            "api-authentication",
+            "code-generator",
+            "npm:@nx/devkit@17.0.2",
+            "npm:nx"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/executors/code-gen/schema.json",
+          "hash": "8997231949991499476"
+        },
+        {
+          "file": "libs/nx-plugin/src/executors/code-gen/schema.ts",
+          "hash": "15202991712070194199",
+          "deps": [
+            "code-generator"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/add-code-gen-target/__snapshots__/generator.spec.ts.snap",
+          "hash": "823447656348033746"
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/add-code-gen-target/generator.spec.ts",
+          "hash": "1580330239183927758",
+          "deps": [
+            "npm:@nx/devkit@17.0.2"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/add-code-gen-target/generator.ts",
+          "hash": "17252597277969873654",
+          "deps": [
+            "npm:@nx/devkit@17.0.2"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/add-code-gen-target/schema.json",
+          "hash": "7461066847938599525"
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/add-code-gen-target/schema.ts",
+          "hash": "3547961373803084470"
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/code-gen/__snapshots__/generator.spec.ts.snap",
+          "hash": "4832144627226996779"
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/code-gen/generator.spec.ts",
+          "hash": "2477851298701359295",
+          "deps": [
+            "npm:@nx/devkit@17.0.2",
+            "npm:msw"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/code-gen/generator.ts",
+          "hash": "12698484822511760133",
+          "deps": [
+            "api-authentication",
+            "code-generator",
+            "npm:@nx/devkit@17.0.2"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/code-gen/schema.json",
+          "hash": "11184479150585513638"
+        },
+        {
+          "file": "libs/nx-plugin/src/generators/code-gen/schema.ts",
+          "hash": "6965549013762354102",
+          "deps": [
+            "code-generator"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/index.ts",
+          "hash": "10928323783839690631"
+        },
+        {
+          "file": "libs/nx-plugin/src/shared/config.ts",
+          "hash": "926178036828735115",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "libs/nx-plugin/src/shared/is-dry-run.ts",
+          "hash": "1565723897977777360"
+        },
+        {
+          "file": "libs/nx-plugin/src/shared/is-verbose.ts",
+          "hash": "16391975559105790514"
+        },
+        {
+          "file": "libs/nx-plugin/test-data/features-ivu5ntxbxeeorm248jl25bs6.json",
+          "hash": "8812061241163278145"
+        },
+        {
+          "file": "libs/nx-plugin/test-data/projects.json",
+          "hash": "1566334439995178850"
+        },
+        {
+          "file": "libs/nx-plugin/tsconfig.json",
+          "hash": "2387120887811698066"
+        },
+        {
+          "file": "libs/nx-plugin/vite.config.ts",
+          "hash": "7950500423963457411",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "cli": [
+        {
+          "file": "apps/cli/.eslintrc.cjs",
+          "hash": "6635745892308592780"
+        },
+        {
+          "file": "apps/cli/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "apps/cli/CHANGELOG.md",
+          "hash": "16976997736235767266"
+        },
+        {
+          "file": "apps/cli/README.md",
+          "hash": "17170412264149469473"
+        },
+        {
+          "file": "apps/cli/package.json",
+          "hash": "6108146349247293739",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0",
+            "npm:ejs",
+            "npm:prompts",
+            "npm:zod",
+            "npm:open@9.1.0",
+            "npm:@types/open"
+          ]
+        },
+        {
+          "file": "apps/cli/project.json",
+          "hash": "13929653873337521926"
+        },
+        {
+          "file": "apps/cli/src/commands/account.ts",
+          "hash": "4332142631139263061",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0",
+            "api-authentication",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "apps/cli/src/commands/code-gen.ts",
+          "hash": "9392469027453703420",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0",
+            "api-authentication",
+            "code-generator",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "apps/cli/src/commands/login.ts",
+          "hash": "11935128282603030973",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0",
+            "api-authentication",
+            "npm:open@9.1.0",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "apps/cli/src/commands/select-organization.ts",
+          "hash": "11557194230942517852",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0",
+            "api-authentication",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "apps/cli/src/lib/action-runner.ts",
+          "hash": "3805831716751209017",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0"
+          ]
+        },
+        {
+          "file": "apps/cli/src/lib/config.ts",
+          "hash": "10355664060532819545",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/cli/src/lib/pkce.ts",
+          "hash": "16396725878285576863"
+        },
+        {
+          "file": "apps/cli/src/lib/prompt-for-organization.ts",
+          "hash": "7594990104259728884",
+          "deps": [
+            "code-generator",
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "apps/cli/src/lib/title-text.ts",
+          "hash": "4008246294248178017"
+        },
+        {
+          "file": "apps/cli/src/main.ts",
+          "hash": "8757229694855403692",
+          "deps": [
+            "npm:@commander-js/extra-typings@11.1.0"
+          ]
+        },
+        {
+          "file": "apps/cli/tsconfig.json",
+          "hash": "14775515594969164122"
+        },
+        {
+          "file": "apps/cli/vite.config.ts",
+          "hash": "13958806520646212158",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "dotnet-sdk-test": [
+        {
+          "file": "libs/dotnet-sdk-test/CHANGELOG.md",
+          "hash": "9294147146287616411"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/Extensions/ServiceCollectionExtensions.cs",
+          "hash": "17847884241180857230"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/FeatureBoard.DotnetSdk.Test.csproj",
+          "hash": "1005698115377893533",
+          "deps": [
+            "dotnet-sdk"
+          ]
+        },
+        {
+          "file": "libs/dotnet-sdk-test/FeatureBoardClientTests.cs",
+          "hash": "383323465729139498"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/FeatureBoardHttpClientTests.cs",
+          "hash": "4261702231643429668"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/FeatureBoardLastCheckedServiceTests.cs",
+          "hash": "12600517548544731109"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/FeatureBoardServiceTests.cs",
+          "hash": "15830487892139168953"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/State/FeatureboardStateTests.cs",
+          "hash": "2634125452218732069"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/TestFeatures.cs",
+          "hash": "17590340975702135102"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/Usings.cs",
+          "hash": "1877589370951218216"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/package.json",
+          "hash": "5171090433410737845"
+        },
+        {
+          "file": "libs/dotnet-sdk-test/project.json",
+          "hash": "13993854428102199776"
+        }
+      ],
+      "code-generator": [
+        {
+          "file": "libs/code-generator/.eslintrc.cjs",
+          "hash": "17934149059817408221"
+        },
+        {
+          "file": "libs/code-generator/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/code-generator/CHANGELOG.md",
+          "hash": "15623289408301035749"
+        },
+        {
+          "file": "libs/code-generator/README.md",
+          "hash": "6808717029823354277"
+        },
+        {
+          "file": "libs/code-generator/package.json",
+          "hash": "11567190000958936802"
+        },
+        {
+          "file": "libs/code-generator/project.json",
+          "hash": "52564879408686950"
+        },
+        {
+          "file": "libs/code-generator/src/index.ts",
+          "hash": "5226480803784864047"
+        },
+        {
+          "file": "libs/code-generator/src/lib/__snapshots__/code-generator.spec.ts.snap",
+          "hash": "14384497647464917087"
+        },
+        {
+          "file": "libs/code-generator/src/lib/api/get-organizations.ts",
+          "hash": "14411477204905442856"
+        },
+        {
+          "file": "libs/code-generator/src/lib/api/get-project-features.ts",
+          "hash": "16768689458641246937"
+        },
+        {
+          "file": "libs/code-generator/src/lib/api/get-projects.ts",
+          "hash": "3579345316380189888"
+        },
+        {
+          "file": "libs/code-generator/src/lib/code-generator.spec.ts",
+          "hash": "9916704457153021180",
+          "deps": [
+            "npm:msw"
+          ]
+        },
+        {
+          "file": "libs/code-generator/src/lib/code-generator.ts",
+          "hash": "11338375711331784374",
+          "deps": [
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "libs/code-generator/src/lib/generators/dotnet-api/functions.ts",
+          "hash": "17493405725606590844",
+          "deps": [
+            "npm:prompts"
+          ]
+        },
+        {
+          "file": "libs/code-generator/src/lib/generators/dotnet-api/generate-files.ts",
+          "hash": "9917827396504887763",
+          "deps": [
+            "npm:ejs"
+          ]
+        },
+        {
+          "file": "libs/code-generator/src/lib/queryFeatureBoard.ts",
+          "hash": "17984789159301022891"
+        },
+        {
+          "file": "libs/code-generator/src/lib/templates/dotnet-api/Features.cs.template",
+          "hash": "6388635475802969148"
+        },
+        {
+          "file": "libs/code-generator/src/lib/templates/typescript/features.ts.template",
+          "hash": "13515120862625806405"
+        },
+        {
+          "file": "libs/code-generator/src/lib/test-data/features-ivu5ntxbxeeorm248jl25bs6.json",
+          "hash": "8812061241163278145"
+        },
+        {
+          "file": "libs/code-generator/src/lib/test-data/projects.json",
+          "hash": "1566334439995178850"
+        },
+        {
+          "file": "libs/code-generator/src/lib/tree/tree.ts",
+          "hash": "16316000325762936314"
+        },
+        {
+          "file": "libs/code-generator/tsconfig.build.json",
+          "hash": "6301529111928286247"
+        },
+        {
+          "file": "libs/code-generator/tsconfig.json",
+          "hash": "13102079942051040185"
+        },
+        {
+          "file": "libs/code-generator/vite.config.ts",
+          "hash": "13954633537084814238",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "contracts": [
+        {
+          "file": "libs/contracts/.eslintrc.cjs",
+          "hash": "6086653406718410296"
+        },
+        {
+          "file": "libs/contracts/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/contracts/CHANGELOG.md",
+          "hash": "2508173553189884753"
+        },
+        {
+          "file": "libs/contracts/README.md",
+          "hash": "4965074243288919763"
+        },
+        {
+          "file": "libs/contracts/package.json",
+          "hash": "9549149740243199253"
+        },
+        {
+          "file": "libs/contracts/project.json",
+          "hash": "13462175519396467967"
+        },
+        {
+          "file": "libs/contracts/src/index.ts",
+          "hash": "1104285125187301162"
+        },
+        {
+          "file": "libs/contracts/src/lib/error-types.ts",
+          "hash": "16842641486310850899"
+        },
+        {
+          "file": "libs/contracts/src/lib/messages.ts",
+          "hash": "8464291202509261480"
+        },
+        {
+          "file": "libs/contracts/src/lib/notification-types.ts",
+          "hash": "4425758176634241052"
+        },
+        {
+          "file": "libs/contracts/tsconfig.json",
+          "hash": "6255917959646398005"
+        },
+        {
+          "file": "libs/contracts/vitest.config.ts",
+          "hash": "4712737126581471500"
+        }
+      ],
+      "react-sdk": [
+        {
+          "file": "libs/react-sdk/.eslintrc.cjs",
+          "hash": "592983436090523110"
+        },
+        {
+          "file": "libs/react-sdk/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/react-sdk/CHANGELOG.md",
+          "hash": "11398443844199843975"
+        },
+        {
+          "file": "libs/react-sdk/README.md",
+          "hash": "719470512104485718"
+        },
+        {
+          "file": "libs/react-sdk/package.json",
+          "hash": "17375093875352349731",
+          "deps": [
+            "npm:react@18.3.1",
+            "js-sdk",
+            "npm:debug@4.4.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/project.json",
+          "hash": "12387965817059781973"
+        },
+        {
+          "file": "libs/react-sdk/src/featureboard-provider.tsx",
+          "hash": "14621439638581798902",
+          "deps": [
+            "js-sdk",
+            "npm:react@18.3.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/src/index.ts",
+          "hash": "200033502754246456"
+        },
+        {
+          "file": "libs/react-sdk/src/log.ts",
+          "hash": "1041554183743333107",
+          "deps": [
+            "npm:debug@4.4.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/src/tests/use-feature.spec.tsx",
+          "hash": "1228314022852783544",
+          "deps": [
+            "js-sdk",
+            "npm:@testing-library/react",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/src/use-client.ts",
+          "hash": "10925979300590435097",
+          "deps": [
+            "js-sdk",
+            "npm:react@18.3.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/src/use-feature.ts",
+          "hash": "5733729106430866689",
+          "deps": [
+            "js-sdk",
+            "npm:react@18.3.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/src/use-previous.ts",
+          "hash": "14617739233505815100",
+          "deps": [
+            "npm:react@18.3.1"
+          ]
+        },
+        {
+          "file": "libs/react-sdk/tsconfig.json",
+          "hash": "4115247146767632946"
+        },
+        {
+          "file": "libs/react-sdk/vitest.config.ts",
+          "hash": "1779109482816125527",
+          "deps": [
+            "npm:@vitejs/plugin-react",
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ],
+      "python-sdk": [
+        {
+          "file": "libs/python-sdk/CHANGELOG.md",
+          "hash": "9273552704437055714"
+        },
+        {
+          "file": "libs/python-sdk/README.md",
+          "hash": "2511793402172504360"
+        },
+        {
+          "file": "libs/python-sdk/coverage.py",
+          "hash": "12145925167095107724"
+        },
+        {
+          "file": "libs/python-sdk/package.json",
+          "hash": "13530642223152607319"
+        },
+        {
+          "file": "libs/python-sdk/project.json",
+          "hash": "13327144607806769865"
+        },
+        {
+          "file": "libs/python-sdk/requirements.txt",
+          "hash": "2738001765092464653"
+        },
+        {
+          "file": "libs/python-sdk/setup.py",
+          "hash": "1479588420523983269"
+        },
+        {
+          "file": "libs/python-sdk/src/client_connection.py",
+          "hash": "6071298140237361592"
+        },
+        {
+          "file": "libs/python-sdk/src/create_browser_client.py",
+          "hash": "16686240727114119468"
+        },
+        {
+          "file": "libs/python-sdk/src/create_client.py",
+          "hash": "16500925268128636571"
+        },
+        {
+          "file": "libs/python-sdk/src/effective_feature_state_store.py",
+          "hash": "17144429004585082432"
+        },
+        {
+          "file": "libs/python-sdk/src/readme.md",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "libs/python-sdk/src/tests/test_client_connection.py",
+          "hash": "7752931779326788831"
+        },
+        {
+          "file": "libs/python-sdk/src/tests/test_create_browser_client.py",
+          "hash": "15350319100929487467"
+        },
+        {
+          "file": "libs/python-sdk/src/tests/test_create_client.py",
+          "hash": "3808103107014357854"
+        },
+        {
+          "file": "libs/python-sdk/src/tests/test_effective_feature_state_store.py",
+          "hash": "5519812724606068327"
+        }
+      ],
+      "node-sdk": [
+        {
+          "file": "libs/node-sdk/.eslintrc.cjs",
+          "hash": "4868568522171289212"
+        },
+        {
+          "file": "libs/node-sdk/.npmignore",
+          "hash": "8546069181066831363"
+        },
+        {
+          "file": "libs/node-sdk/CHANGELOG.md",
+          "hash": "4512137518738899668"
+        },
+        {
+          "file": "libs/node-sdk/README.md",
+          "hash": "7956627953183904321"
+        },
+        {
+          "file": "libs/node-sdk/package.json",
+          "hash": "15808908935934269614",
+          "deps": [
+            "js-sdk",
+            "npm:debug@4.4.1",
+            "npm:promise-completion-source"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/project.json",
+          "hash": "6776314306923496543"
+        },
+        {
+          "file": "libs/node-sdk/src/external-state-store.ts",
+          "hash": "2823932426530100782",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/feature-state-store.ts",
+          "hash": "16974003623757421761",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/index.ts",
+          "hash": "16802575376096871615",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/interval.ts",
+          "hash": "13991121206502476063"
+        },
+        {
+          "file": "libs/node-sdk/src/log.ts",
+          "hash": "6329012978553827110",
+          "deps": [
+            "npm:debug@4.4.1"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/manual-server-client.ts",
+          "hash": "2519457032939888320",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/server-client.ts",
+          "hash": "11613081395094907961",
+          "deps": [
+            "contracts",
+            "js-sdk",
+            "npm:promise-completion-source"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/server-connection.ts",
+          "hash": "14995722948008839517",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/http-client.spec.ts",
+          "hash": "11999442556792833658",
+          "deps": [
+            "contracts",
+            "js-sdk",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/live-client.spec.ts",
+          "hash": "10744648005238795805",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/mock-external-state-store.ts",
+          "hash": "18164169269104784574",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/mode-manual.spec.ts",
+          "hash": "11129486962954757215",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/mode-on-request.spec.ts",
+          "hash": "12041842698081132073",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/mode-polling.spec.ts",
+          "hash": "2513412694988710299",
+          "deps": [
+            "contracts",
+            "npm:msw",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/tests/ws-helper.ts",
+          "hash": "2602488336991843022",
+          "deps": [
+            "contracts",
+            "live-connection"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/createLiveUpdateStrategy.ts",
+          "hash": "9576777958707224122",
+          "deps": [
+            "contracts",
+            "live-connection",
+            [
+              "live-connection",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/createManualUpdateStrategy.ts",
+          "hash": "7606385858417010753",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/createOnRequestUpdateStrategy.ts",
+          "hash": "6475992230109485161",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/createPollingUpdateStrategy.ts",
+          "hash": "6743956735624771521",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/getAllEndpoint.ts",
+          "hash": "2768929525842582452"
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/resolveUpdateStrategy.ts",
+          "hash": "6460974419847539472",
+          "deps": [
+            "js-sdk"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/update-strategies.ts",
+          "hash": "10898970160690195193",
+          "deps": [
+            "live-connection"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/update-strategies/updates-log.ts",
+          "hash": "13280287788015023320"
+        },
+        {
+          "file": "libs/node-sdk/src/utils/fetchFeaturesConfiguration.ts",
+          "hash": "11074964240406141546",
+          "deps": [
+            "contracts"
+          ]
+        },
+        {
+          "file": "libs/node-sdk/src/utils/http-log.ts",
+          "hash": "8211374449129940634"
+        },
+        {
+          "file": "libs/node-sdk/src/utils/pollingUpdates.ts",
+          "hash": "8452716149608766045"
+        },
+        {
+          "file": "libs/node-sdk/tsconfig.json",
+          "hash": "6798378411855610879"
+        },
+        {
+          "file": "libs/node-sdk/vitest.config.ts",
+          "hash": "564265137051601607",
+          "deps": [
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

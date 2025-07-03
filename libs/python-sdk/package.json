@@ -15,8 +15,5 @@
     "bugs": {
         "url": "https://github.com/arkahna/featureboard-sdks/issues"
     },
-    "homepage": "https://github.com/arkahna/featureboard-sdks/tree/master/libs/python-sdk#readme",
-    "dependencies": {
-        "requests": "^2.25.1"
-    }
+    "homepage": "https://github.com/arkahna/featureboard-sdks/tree/master/libs/python-sdk#readme"
 }
